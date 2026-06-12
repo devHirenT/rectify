@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Shikaku Master",
+    "slug": "shikaku-master",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shikaku.master"
+    },
+    "android": {
+      "package": "com.shikaku.master",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0e1118"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "buildToolsVersion": "36.0.0"
+          }
+        }
+      ],
+      "expo-status-bar",
+      "expo-audio",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0e1118",
+          "resizeMode": "contain"
+        }
+      ]
+    ]
+  }
+}

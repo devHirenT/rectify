@@ -1,0 +1,33 @@
+{
+  "name": "@shikaku/mobile",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.ts",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf .expo .turbo"
+  },
+  "dependencies": {
+    "@shikaku/ads": "*",
+    "@shikaku/audio": "*",
+    "@shikaku/game-engine": "*",
+    "@shikaku/rewards": "*",
+    "@shikaku/storage": "*",
+    "expo": "^56.0.0",
+    "expo-audio": "~56.0.12",
+    "expo-build-properties": "~56.0.18",
+    "expo-haptics": "~56.0.3",
+    "expo-splash-screen": "~56.0.10",
+    "expo-status-bar": "~56.0.4",
+    "react": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-mmkv": "^4.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "~19.2.14",
+    "typescript": "~6.0.3"
+  }
+}

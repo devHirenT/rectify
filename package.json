@@ -1,0 +1,36 @@
+{
+  "name": "shikaku-master",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Shikaku Master - Offline-first logic puzzle game (monorepo)",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.11.1",
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "comment": "react-native is pinned here as a workspace-root anchor so npm dedupes the expo-* `react-native: *` peer deps onto SDK 56's version (0.85.3) instead of hoisting an older one. Web uses no RN.",
+  "overrides": {
+    "react-native": "0.85.3"
+  },
+  "dependencies": {
+    "react": "19.2.3",
+    "react-native": "0.85.3"
+  },
+  "packageManager": "npm@11.6.2"
+}

@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build outputs / caches
+dist/
+.next/
+.turbo/
+.expo/
+coverage/
+*.tsbuildinfo
+*.log
+
+# Expo-generated native projects (regenerate with `expo prebuild`)
+apps/mobile/android/
+apps/mobile/ios/
+
+# Build artifacts — ship APK/AAB via GitHub Releases, not git history
+*.apk
+*.aab
+
+# Signing secrets / env
+*.keystore
+*.jks
+.env
+.env.local
+.env.*.local
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+*.iml
+
+# Local tool/session config (machine-specific)
+.claude/
