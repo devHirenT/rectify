@@ -3,6 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   // Consume the workspace TypeScript/ESM packages directly.
   transpilePackages: [
+    '@shikaku/achievements',
     '@shikaku/ads',
     '@shikaku/analytics',
     '@shikaku/audio',

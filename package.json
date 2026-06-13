@@ -24,13 +24,12 @@
   "engines": {
     "node": ">=18"
   },
-  "comment": "react-native is pinned here as a workspace-root anchor so npm dedupes the expo-* `react-native: *` peer deps onto SDK 56's version (0.85.3) instead of hoisting an older one. Web uses no RN.",
-  "overrides": {
-    "react-native": "0.85.3"
-  },
+  "comment": "Anchor React 18.3 at the workspace root (a hoist target, NOT an override) so the hoisted web toolchain (Next/styled-jsx) resolves a single React 18 matching react-dom. The mobile app (Expo 56 / React 19) declares its own React 19, which npm nests under apps/mobile.",
   "dependencies": {
-    "react": "19.2.3",
-    "react-native": "0.85.3"
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1"
   },
   "packageManager": "npm@11.6.2"
 }

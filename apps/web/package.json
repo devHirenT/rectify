@@ -11,6 +11,7 @@
     "clean": "rm -rf .next .turbo"
   },
   "dependencies": {
+    "@shikaku/achievements": "*",
     "@shikaku/ads": "*",
     "@shikaku/analytics": "*",
     "@shikaku/audio": "*",
